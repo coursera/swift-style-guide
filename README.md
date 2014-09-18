@@ -2,8 +2,8 @@
 
 ## General
 
-	* No semilcolons, unless it is required
-	* No paranthesis, unless it is required
+	* No semicolons, unless it is required
+	* No parenthesis, unless it is required
 	* Each variable or constant must be on a separate line
 	* `let` is preferred, `var` is only used when immutability is strict a requirement
 	* Always use named parameters
@@ -11,7 +11,7 @@
 
 ## Variables or constants
 
-* Avoid using self to keep code clean. Swift does not require the use of self. Use self only when absoultely needed.
+* Avoid using self to keep code clean. Swift does not require the use of self. Use self only when absolutely needed.
 * Use type inference as far as possible
 
 *Preferred*
@@ -31,7 +31,7 @@ Example:
 Order the instance variables in the class, with this order :
 
     * Immutable 
-    * Optional immutables
+    * Optional immutable
     * Variables
     * Optional variables
 
@@ -54,7 +54,7 @@ Example:
 
     if let unwrapped = optional {
     	unwrapped statement 1;
-    	unrwapped statement 2;
+    	unwrapped statement 2;
     }
     
     optional?.optionalFunction() // evaluates to nil if optional is not present
@@ -98,7 +98,7 @@ Example:
 * Style Guidelines
 	* Each KVO key path match should call its own update/changed function
 	* Switch statements are often the best way to follow the logical 'return-first' guideline for the observer function
-		- remember in Swift cases do not fallthrough by default
+		- remember in Swift cases do not fall-through by default
 
 Example:
 
@@ -145,4 +145,3 @@ class NewClass: NSObject {
     deinit {
         classB.removeObserver(self, forKeyPath: "someProperty", context: &newClassKVOContext)
     }
-}
