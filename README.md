@@ -13,6 +13,7 @@
 
 * Avoid using self to keep code clean. Swift does not require the use of self. Use self only when absolutely needed.
 * Use type inference as far as possible.
+* Avoid using 'k' prefix for constants.
 
 *Preferred*
 
